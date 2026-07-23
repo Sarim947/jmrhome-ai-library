@@ -1,0 +1,80 @@
+JMR Door AI Image Workflow v1.0
+
+==================================================
+CORE-00（所有任务必须放最前）
+==================================================
+
+【English】
+OutputFormat:WEBP.OutputSize:1600x1200.ColorProfile:sRGB.UseTheUploadedImageAsTheONLYProductReference.ReadTheImageFirstAndUnderstandTheDesignLanguageBeforeGeneratingAnything.KeepTheProductEXACTLYUnchanged.DoNOTRedesignTheDoor.DoNOTModifyTheProportions.DoNOTModifyTheFrame.DoNOTModifyThePanelLayout.DoNOTModifyTheSurfaceTexture.DoNOTModifyTheStoneTexture.DoNOTModifyTheWoodGrain.DoNOTModifyTheMetalTexture.DoNOTModifyTheBronzeInsert.DoNOTModifyTheGlass.DoNOTModifyTheHardware.DoNOTModifyTheSmartLock.DoNOTModifyTheHandle.DoNOTModifyTheThreshold.DoNOTModifyAnyManufacturingDetails.PreserveEveryRealMaterialDetail.PreserveEveryRealSurfaceImperfection.PreserveEveryManufacturingTexture.DoNOTStylize.DoNOTBeautify.DoNOTInventNewDetails.DoNOTReplaceAnyPart.UnlessExplicitlyRequestedOnlyRecomposeTheImage.AlwaysMaintainTrueMaterials.TrueColors.TrueLighting.TrueGeometry.UltraPhotorealistic.8K.
+
+【中文】
+最终输出格式必须为WEBP。输出尺寸固定为1600×1200。颜色空间使用sRGB。使用上传图片作为唯一产品参考。生成前必须先识别产品设计语言。保持产品完全不变。禁止修改门、门框、门板布局、比例、材质、纹理、岩板、木纹、金属纹理、青铜装饰条、玻璃、五金、智能锁、把手、门槛及任何制造细节。保留所有真实材料、真实纹理和真实制造痕迹。禁止美化、风格化或凭空创造任何细节。除非明确要求，否则仅允许重新构图。始终保持真实材质、真实颜色、真实光线和真实几何比例。最终效果要求超写实8K。
+
+==================================================
+Prompt-00_ProductReading（产品识别）
+==================================================
+
+【English】
+ReadTheUploadedImageFirst.DoNOTGenerateAnyImage.IdentifyTheDoorDesignLanguage.Material.SurfaceFinish.Color.PanelLayout.FrameStyle.Hardware.SmartLock.ProductHighlights.RecommendedArchitecturalStyle.OutputEverythingInChineseprompt.WaitForUserConfirmationBeforeGenerating.Donotstartuntiltheuser agree.
+
+【中文】
+先阅读图片，不生成图片；识别设计语言、材质、工艺、颜色、门型、门框、五金、智能锁、卖点、适合建筑风格；中文输出prompt，准备怎么做，等待确认,不要开始作业除非用户确认。
+
+==================================================
+Prompt-01_Hero（场景图）
+==================================================
+
+【English】
+RemoveTheWorkshopBackgroundCompletely.ReconstructHiddenEdgesAndCompleteTheEntireDoorAndFrame.CorrectPerspectiveWhileKeepingTrueProportions.CenterTheDoorPerfectly.GenerateAnArchitecturalSceneThatBestMatchesThisSpecificDoorBasedOnItsOwnDesignLanguage.TheArchitectureMustOnlyEnhanceTheDoor.TheDoorOccupiesAbout70PercentOfTheComposition.FrontElevation.EyeLevel.35mmArchitecturalPhotography.ArchitecturalDigestQuality.UltraRealistic.
+
+【中文】
+移除车间背景；补全门体；校正透视；保持比例；门居中；自动匹配最适合建筑场景；建筑只衬托门；门约占70%；建筑杂志级摄影。
+
+==================================================
+Prompt-02_Catalog（白底图）
+==================================================
+
+【English】
+RemoveTheEntireBackground.CompleteAnyHiddenOrCroppedPartsOfTheDoorAndFrame.CorrectPerspective.KeepAllEdgesPerfectlyStraightAndVertical.CenterTheDoorPerfectly.PlaceTheDoorOnPureWhiteBackgroundFFFFFF.NoFloor.NoWall.NoEnvironment.NoProps.NoDecorations.NoReflection.NoText.NoLogo.OnlyAVerySoftNaturalGroundingShadowDirectlyBeneathTheDoor.LeaveGenerousWhiteSpaceAboveAndBelowTheDoor.TheDoorShouldOccupyApproximately70PercentOfTheImageHeight.WithBalancedMarginsOnAllSides.DoNotCropOrZoomTheDoor.PremiumLuxuryArchitecturalCatalogPhotography.UltraClean.UltraRealistic.OutputTwoVersions:1200x900and1600x1200.MaintainConsistentCatalogComposition.DoNotScaleTheDoorToFillTheCanvas.TheWhiteMarginsAreAnIntentionalPartOfTheComposition.Using the supplied door image as the exact product reference, create a clean horizontal 4:3 catalog image on a seamless pure-white background. Keep the complete door fully visible, perfectly upright, front-facing, and horizontally centered. Scale the door to occupy exactly 80% of the canvas height, leaving 10% clean white space above and 10% below, with generous balanced white space on both sides. Preserve the door’s original arched silhouette, proportions, double-leaf structure, bronze color, textured metal surfaces, concentric decorative geometry, raised rectangular inlays, circular pull handle, lock position, frame, hardware, joints, seams, and every manufacturing detail exactly as shown. Do not redesign, simplify, repair, beautify, add, remove, mirror, or reinterpret any product feature. Use neutral, even catalog lighting with accurate material color, crisp edges, natural fine detail, and only a very subtle grounding shadow beneath the door. No architecture, wall, floor, props, scenery, text, logo, watermark, border, or decorative background.
+
+【中文】
+去除整个背景；补全所有被遮挡或裁切的门体和门框；校正透视；保持所有边缘完全笔直且垂直；门体居中；背景为纯白FFFFFF；无地面、无墙面、无环境、无道具、无装饰、无倒影、无文字、无Logo；仅保留门体正下方极轻微、自然的落地阴影；门体上下保留充足留白；门体高度约占整个画面高度的70%；四周边距保持均衡；不要裁切门体，不要放大至充满画面；整体呈现高端建筑产品画册级摄影效果；超干净；超写实；输出两种尺寸：1200×900、1600×1200。保持统一的产品画册构图；不要将门体放大至填满画面；四周留白属于构图的一部分，不可缩小，上、下的留白都占图片的10%，门主体占80%，对应的像素：1200x900，门高720px，上下各留90px；1600x1200，门高960px，上下各留120px。
+
+==================================================
+Prompt-03_Detail（细节图）
+==================================================
+
+【English】
+DoNOTRegenerateTheDoor.OnlyRecomposeTheExistingImage.FocusOnTheMostImportantDesignDetailAutomatically.CropProfessionallyForLuxuryArchitecturalProductPhotography.KeepTheProductPerfectlySharp.ApplyShallowDepthOfField.UseTheOriginalWorkshopOnlyAsASoftBlurredBackground.MaintainNaturalLighting.TrueMaterials.TrueColors.UltraRealistic.
+
+【中文】
+不重生产品；仅重新构图；自动寻找最佳细节；主体清晰；浅景深；原车间柔焦背景；真实材质、真实颜色。
+
+==================================================
+Prompt-04_Material（材质图）
+==================================================
+
+【English】
+DoNOTRegenerateAnything.FocusOnlyOnTheSurfaceMaterialAutomatically.CropToShowTheMaterialTextureInTheMostProfessionalWay.PreserveEveryRealSurfaceDetail.KeepPerfectSharpness.ApplyVerySoftBackgroundBlur.MaintainTrueLighting.TrueColor.TrueTexture.UltraRealistic.
+
+【中文】
+聚焦材料纹理；展示木纹、岩板、金属、漆面等真实材质；保持真实光线与颜色。
+
+
+================================================== 自动化执行规范
+==================================================
+
+流程： 1. 所有图片先执行 CORE-00 2. 执行 Prompt-00 产品识别 3. 用户确认
+4. 根据任务生成对应图片
+
+
+输出： 图片(main) → CORE-00 → Prompt-00 ×1 →
+Prompt-01_Hero ×1 → Prompt-02_Catalog ×1
+
+图片(main2) → CORE-00 → Prompt-00 ×1 →
+Prompt-02_Hero ×1
+
+
+图片(detail) → CORE-00 → Prompt-03_Detail ×1
+
+图片(hardware) → CORE-00 → Prompt-04_Material ×1
